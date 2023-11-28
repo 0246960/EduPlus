@@ -21,8 +21,8 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./views/Home";
 import "./App.scss"
 import Stats from "./views/Statistics";
-import News from "./views/News";
-import About from "./views/About";
+import AboutUs from "./views/AboutUs";
+import HowToHelp from "./views/HowToHelp";
 
 function App() {
   return (
@@ -32,8 +32,8 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path="/statistics" element={<Stats/>}/>
-          <Route path="/news" element={<News/>}/>
-          <Route path="/how-to-help" element={<About/>}/>
+          <Route path="/about-us" element={<AboutUs/>}/>
+          <Route path="/how-to-help" element={<HowToHelp/>}/>
         </Routes>
       </BrowserRouter>
     </div>

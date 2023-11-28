@@ -1,6 +1,12 @@
-@import '~bootstrap/scss/bootstrap';
-@import "./components/SCSS/Home.scss";
+@import "~bootswatch/dist/Journal/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/Journal/bootswatch";
+
+@import "./components/Header.jsx/Header.scss";
+
 
 body{
     padding-top: 75px ;
+    background-color: $gray-200;
+    border-left: 1rem solid;
 }

@@ -1,0 +1,9 @@
+@import "../../Breakpoints/Breakpoints.scss";
+
+.carousel {
+    
+    @include media("<tablet"){
+        margin: auto;
+        height: auto;
+    }
+}

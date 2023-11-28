@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    -light-color: #ff4848;
+    border-bottom: .5rem solid;
 
     .navbar-brand{
         font-size: 25px;
@@ -13,13 +13,8 @@
 
     .nav-link{
         margin-left: 1rem;
+        font-size: 16px;
     }
-        
-    img:first-of-type{
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        }
     
 }
 
