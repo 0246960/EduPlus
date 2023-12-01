@@ -1,45 +1,44 @@
-@import "../../Breakpoints/Breakpoints.scss";
-
-
-
-
 .content {
-    text-align: center;
-    @include media(">tablet"){
-        .header {
-            
-            display: inline-block;
-
-            .img1{
-                height: 40vh;
-                width: auto;
-            }
-            .desc{
-                height: 40vh;
-                margin-bottom: 5vh;
-                border-radius: 25px;
-            }
-
-        }
-
-        .stats {
-            border-radius: 25px;
-            margin-bottom: 3rem;
-            .gImage{
-                width: 70vh;
-                margin: 1rem;
-                border-radius: 3%;
-            }
-
-        }
-
-        .call-to-action{
-            .cImg{
-                width: 100%;
-                height: 100vh;
-            }
-        }
+    .hero-section {
+      // Centrar el texto y dar espaciado vertical
+      text-align: center;
+      padding: 4rem 0;
     }
-}
-
-
+  
+    .my-5 {
+      // Centrar el contenido de cada Container
+      text-align: center;
+  
+      .row {
+        // Centrar los elementos Row
+        justify-content: center;
+      }
+    }
+  
+    .stats-section, .call-to-action {
+      // Centrar y dar espaciado a estas secciones
+      text-align: center;
+      padding: 4rem 0;
+    }
+  
+    .footer {
+      // Estilo para el pie de página
+      background-color: #343a40;
+      text-align: center;
+      padding: 2rem 0;
+  
+      p {
+        margin-bottom: 0;
+      }
+    }
+  
+    // Estilos para imágenes y sombras
+    .rounded {
+      border-radius: 0.75rem;
+    }
+  
+    .shadow {
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
+  
