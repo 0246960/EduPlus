@@ -1,0 +1,36 @@
+.custom-navbar {
+    background-color: #0056b3; // Un color de fondo azul primario.
+    padding: 0.5rem 1rem; // Padding para dar más espacio.
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); // Sombra para darle profundidad.
+  
+    .navbar-brand {
+      color: #ffffff; // Color blanco para el texto del brand.
+      font-size: 2rem; // Tamaño más grande para el brand.
+      font-weight: bold; // Hacer el texto del brand más grueso.
+      transition: color 0.3s ease-in-out; // Transición suave para los cambios de color.
+  
+      &:hover {
+        color: #ffdd59; // Un color amarillo claro para hover.
+      }
+    }
+  
+    .nav-link {
+      color: #f8f9fa; // Color claro para los enlaces.
+      font-size: 1.1rem; // Tamaño ligeramente mayor para los enlaces.
+      transition: color 0.3s ease-in-out; // Transición suave para los cambios de color.
+  
+      &:hover {
+        color: #ffdd59; // Un color amarillo claro para hover.
+        text-decoration: none; // Eliminar la subrayado al hacer hover.
+      }
+    }
+  
+    .navbar-toggler {
+      border-color: #ffdd59; // Color para el botón de toggler.
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-end; // Alinear los enlaces a la derecha.
+    }
+  }
+  
