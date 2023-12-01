@@ -23,17 +23,22 @@ import "./App.scss"
 import Stats from "./views/Statistics";
 import AboutUs from "./views/AboutUs";
 import HowToHelp from "./views/HowToHelp";
+import Login from "./views/Login";
+import Register from "./views/Register";
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home/>}/>
-          <Route path="/home" element={<Home/>}/>
-          <Route path="/statistics" element={<Stats/>}/>
-          <Route path="/about-us" element={<AboutUs/>}/>
-          <Route path="/how-to-help" element={<HowToHelp/>}/>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/statistics" element={<Stats />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/how-to-help" element={<HowToHelp />} />
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -41,3 +46,5 @@ function App() {
 }
 
 export default App;
+
+
