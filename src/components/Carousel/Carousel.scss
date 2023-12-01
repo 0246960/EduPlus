@@ -1,9 +1,27 @@
 @import "../../Breakpoints/Breakpoints.scss";
 
-.carousel {
-    
-    @include media("<tablet"){
-        margin: auto;
-        height: auto;
+.carousel-container {
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.6); // Fondo semi-transparente para mejorar la legibilidad
+      border-radius: 0.5rem;
+      padding: 1rem;
+      bottom: 10%; // Posicionar el caption en la parte inferior del carousel
+      right: 10%; // Posicionar hacia la derecha para dar espacio
+      left: 10%; // Igual espacio del lado izquierdo
+      text-align: left; // Alinear el texto a la izquierda
+  
+      h3 {
+        font-size: 2.5rem; // Tamaño más grande para el título
+        color: #fff;
+      }
+      p {
+        font-size: 1.2rem; // Tamaño adecuado para el texto
+        color: #f8f9fa;
+      }
     }
-}
+  
+    .carousel-item {
+      text-align: center; // Centrar las imágenes dentro del carousel
+    }
+  }
+  
