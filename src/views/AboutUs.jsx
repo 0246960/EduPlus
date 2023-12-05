@@ -37,7 +37,7 @@ function About() {
         alert('Your message has been sent.');
     } catch (error) {
       console.error('There was an error sending the message:', error);
-        alert('Hubo un error al enviar el mensaje.');
+        alert('There was an error sending the message.');
     }
   };
 
