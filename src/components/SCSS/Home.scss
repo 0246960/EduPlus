@@ -1,28 +1,23 @@
 .content {
     .hero-section {
-      // Centrar el texto y dar espaciado vertical
       text-align: center;
       padding: 4rem 0;
     }
   
     .my-5 {
-      // Centrar el contenido de cada Container
       text-align: center;
   
       .row {
-        // Centrar los elementos Row
         justify-content: center;
       }
     }
   
-    .stats-section, .call-to-action {
-      // Centrar y dar espaciado a estas secciones
+    .stats-news-section, .call-to-action {
       text-align: center;
       padding: 4rem 0;
     }
   
     .footer {
-      // Estilo para el pie de página
       background-color: #343a40;
       text-align: center;
       padding: 2rem 0;
@@ -32,7 +27,7 @@
       }
     }
   
-    // Estilos para imágenes y sombras
+    // Styles for images and shadows
     .rounded {
       border-radius: 0.75rem;
     }

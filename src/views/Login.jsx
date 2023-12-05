@@ -18,11 +18,11 @@ const Login = () => {
                 password
             });
             localStorage.setItem('userToken', response.data.token);
-            alert('Inicio de sesión exitoso.');
+            alert('Successful login.');
             navigate('/home');
         } catch (error) {
-            console.error('Error en el inicio de sesión:', error.response || error.message);
-            alert('Inicio de sesión fallido. Por favor verifica tus credenciales.');
+            console.error('Login failed:', error.response || error.message);
+            alert('Login failed. Please verify your credentials.');
         }
     };
   

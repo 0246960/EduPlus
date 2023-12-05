@@ -1,5 +1,5 @@
 import { Container, Carousel, Image } from "react-bootstrap";
-import "./Carousel.scss"; // Asegúrate de tener un archivo SCSS para los estilos
+import "./Carousel.scss"; // Make sure you have an SCSS file for the styles.
 
 function ImgCarousel() {
   return (
@@ -10,11 +10,11 @@ function ImgCarousel() {
             fluid 
             className="d-block w-100" 
             alt="Education for Sustainable Development" 
-            src="https://www.gob.mx/cms/uploads/article/main_image/64273/ODS_4-01.jpg"
+            src="https://www.isglobal.org/documents/10179/6939455/SDG+4+grande+en.jpg/6ff8e7db-cb48-4213-b721-91ec54130589?t=1539682384000"
           />
           <Carousel.Caption>
-            <h3>Educación de Calidad</h3>
-            <p>Objetivo de Desarrollo Sostenible 4.</p>
+            <h3>Quality Education</h3>
+            <p>Sustainable Development Goal 4.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
@@ -22,11 +22,11 @@ function ImgCarousel() {
             fluid 
             className="d-block w-100" 
             alt="Gender Equality in Education" 
-            src="https://www.unwomen.org/sites/default/files/Headquarters/Images/Sections/News/In%20Focus/SDGs/infographics-2018/SDG-Factoids-04-es.png?h=350&w=350"
+            src="https://asiasociety.org/sites/default/files/styles/1200w/public/1/1012-equity-keypolicies.png"
           />
           <Carousel.Caption>
-            <h3>Igualdad de Género en la Educación</h3>
-            <p>Empoderando a través de la educación inclusiva.</p>
+            <h3>Gender Equality in Education</h3>
+            <p>Empowering through Inclusive Education.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
@@ -34,11 +34,11 @@ function ImgCarousel() {
             fluid 
             className="d-block w-100" 
             alt="Innovative Education" 
-            src="https://www.elternativa.com/wp-content/uploads/2023/07/ODS-4.jpg"
+            src="https://unu.edu/sites/default/files/styles/og_image/public/2023-10/51221675490_88401f45d8_k.png?itok=MDJNF5nG"
           />
           <Carousel.Caption>
-            <h3>Educación Innovadora</h3>
-            <p>Innovando para el futuro de la enseñanza y el aprendizaje.</p>
+            <h3>Innovative Education</h3>
+            <p>Innovating for the future of teaching and learning.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

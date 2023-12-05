@@ -1,5 +1,5 @@
 import { Button, Container, Image, Row, Col } from "react-bootstrap";
-import Header from "../components/Header/Header"; // Corrige la ruta si es necesario
+import Header from "../components/Header/Header";
 import "../components/SCSS/Home.scss";
 import ImgCarousel from "../components/Carousel/Carousel";
 
@@ -8,7 +8,7 @@ function Home() {
     <div className="content">
       <Header />
 
-      <ImgCarousel /> {/* Asumiendo que ImgCarousel es un componente de carrusel */}
+      <ImgCarousel /> {/* Assuming ImgCarousel is a carousel component */}
 
       <section className="hero-section text-center py-5">
         <h1 className="display-4 fw-bold">EduPlus</h1>
@@ -26,7 +26,7 @@ function Home() {
             />
           </Col>
           <Col md={6} className="bg-primary text-light p-4 rounded shadow">
-            <h3>What we want</h3>
+            <h3>What we pursue</h3>
             <p>
               Working in the guide of the 4th United Nations Sustainable Development Goal (SDG), we seek to bring to light all data related to worldwide education and how accessible it is to the population, as well as the quality of this education.
             </p>
@@ -34,8 +34,8 @@ function Home() {
         </Row>
       </Container>
 
-      <Container className="stats-section text-center py-5 bg-primary text-light">
-        <h2 className="mb-4">Statistics</h2>
+      <Container className="stats-news-section text-center py-5 bg-primary text-light">
+        <h2 className="mb-4">Statistics and News</h2>
         <Row>
           <Col md={6} className="mb-3 mb-md-0">
             <Image className="rounded shadow" fluid alt="graph1" src="https://wenr.wes.org/wp-content/uploads/2018/09/WENR-0618-Country-Profile-India.png" />
@@ -44,7 +44,14 @@ function Home() {
             <Image className="rounded shadow" fluid alt="graph2" src="https://data.unicef.org/wp-content/uploads/2021/12/UN0487758-2000x1333.jpg" />
           </Col>
         </Row>
-        <Button size="lg" variant="light" className="mt-4" href="https://www.unesco.org/en/education">Learn more!</Button>
+        <Row>
+         <Col md={6}>
+           <Button size="lg" variant="light" className="mt-4" href="https://data.worldbank.org/topic/education?end=2022&start=2014">See more statistics here!</Button>
+         </Col>
+         <Col md={6}>
+           <Button size="lg" variant="light" className="mt-4" href="https://uis.unesco.org/en/topic/sustainable-development-goal-4">See some news about education!</Button>
+         </Col>
+        </Row>
       </Container>
 
       <Container className="call-to-action text-center py-5 my-5">

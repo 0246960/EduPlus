@@ -1,9 +1,9 @@
 //Team 9
 /*
   Members: 
-    Arturo Garcia
-    Andres Lopez
-    Francisco Diaz
+    Arturo García
+    Andrés López
+    Francisco Díaz
 
   Dependencies:
     "bootstrap": "^5.3.2",
@@ -34,9 +34,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/statistics" element={<Stats />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/how-to-help" element={<HowToHelp />} />
           <Route path="/login" element={<Login />} /> 
           <Route path="/register" element={<Register />} />
         </Routes>

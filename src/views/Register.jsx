@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Form, Button, Navbar, Nav } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import "../components/SCSS/Register.scss"; // Asegúrate de crear un archivo SCSS para los estilos de registro
+import "../components/SCSS/Register.scss"; 
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -13,9 +13,8 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Agregar validación de contraseña aquí si es necesario
         if (password !== confirmPassword) {
-            alert('Las contraseñas no coinciden.');
+            alert('Passwords do not match.');
             return;
         }
 
@@ -24,11 +23,10 @@ const Register = () => {
                 email,
                 password
             });
-            // Aquí podrías guardar el token, si la API lo envía como respuesta al registro
             localStorage.setItem('userToken', response.data.token);
             navigate('/home');
         } catch (error) {
-            console.error('Error en el registro:', error.response || error.message);
+            console.error('Registry error:', error.response || error.message);
         }
     };
 

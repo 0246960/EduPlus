@@ -11,35 +11,33 @@ function About() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Recuperar el token del almacenamiento local
+    // Retrieve token from local storage
     const token = localStorage.getItem('userToken');
     if (!token) {
-      alert('No tienes un token. Por favor, inicia sesión primero.');
+      alert('You do not have an account yet, sign up to continue');
       return;
     }
 
     try {
-      // Configurar los headers de la solicitud
+      // Configure the request headers
       const config = {
         headers: { Authorization: `Bearer ${token}` }
       };
 
-      // Datos del formulario
+      // Form data
       const formData = {
         name,
         email,
         message
       };
 
-      // Enviar la solicitud POST con Axios
+      // Send the POST request with Axios
       const response = await axios.post('https://api-proyecto-ivory.vercel.app/mensajes', formData, config);
       console.log(response.data);
-        alert('Tu mensaje ha sido enviado.');
-      // Aquí puedes agregar lógica para mostrar un mensaje de éxito o limpiar el formulario.
+        alert('Your message has been sent.');
     } catch (error) {
       console.error('There was an error sending the message:', error);
         alert('Hubo un error al enviar el mensaje.');
-      // Aquí puedes agregar lógica para mostrar un mensaje de error.
     }
   };
 
@@ -48,7 +46,7 @@ function About() {
       <Header/>
       <div className="contact-container">
         <h1 className="ContactTitle">Contact Us</h1>
-        <span className="ContactD">Let us know what you need</span>
+        <span className="ContactD">Let us know your ideas</span>
         <form className='ContactForm' onSubmit={handleSubmit}>
           <input 
             type="text" 
@@ -73,7 +71,7 @@ function About() {
           />
           <button type='submit' className="submitBtn">Submit</button>
         </form>
-        <div className="links">tiktok, instagram, facebook</div>
+        <div className="links">Tiktok | Instagram | Facebook</div>
       </div>
     </div>
   );
